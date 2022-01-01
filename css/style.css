@@ -20,8 +20,6 @@ body{
 .menu a{
 	margin: auto;
 }
-
-
 .main {
 	grid-area: main-start/main-start/full-end/full-end;
 }
