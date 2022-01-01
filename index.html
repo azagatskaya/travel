@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Travels</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+</head>
+<body>
+	<div class="container">
+
+		<nav class="menu">
+			<a href="#">
+				<img src="./assets/icons/menu.svg" alt="menu"></img>
+			</a>
+		</nav>
+
+		<header class="header">
+			<h1 class="header__h1">Shikra</h1>
+			<input type="text" placeholder="Search">
+		</header>
+
+		<sidebar class="sidebar">
+			<div class="sidebar__wrapper">
+				<button class="sidebar__button sidebar__button-dashboard" id="dashboard"></button>
+				<label for="dashboard" class="sidebar__label sidebar__label-active">Dashboard</label>
+			</div>
+			<div class="sidebar__wrapper">
+				<button class="sidebar__button sidebar__button-upcoming" id="upcoming"></button>
+				<label for="upcoming" class="sidebar__label">Upcoming</label>
+			</div>
+			<div class="sidebar__wrapper">
+				<button class="sidebar__button sidebar__button-explore" id="explore"></button>
+				<label for="explore" class="sidebar__label">explore</label>
+			</div>
+			<div class="sidebar__wrapper">
+				<button class="sidebar__button sidebar__button-profile" id="profile"></button>
+				<label for="profile" class="sidebar__label">profile</label>
+			</div>
+			<div class="sidebar__wrapper">
+				<button class="sidebar__button sidebar__button-settings" id="settings"></button>
+				<label for="settings" class="sidebar__label">settings</label>
+			</div>
+			<div class="sidebar__wrapper sidebar__wrapper-logout">
+				<button class="sidebar__button sidebar__button-logout" id="logout"></button>
+				<label for="logout" class="sidebar__label">logout</label>
+			</div>
+		</sidebar>
+
+		<main class="main"></main>
+	</div>
+</body>
+</html>

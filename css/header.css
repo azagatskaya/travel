@@ -1,0 +1,7 @@
+.header {
+	background-color: #F6F7FB;
+	grid-area: full-start/main-start/menu-end/full-end;
+}
+.header__h1{
+	
+}
