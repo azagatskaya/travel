@@ -25,6 +25,7 @@
 .sidebar__button-dashboard{
 	background-image: url("../assets/icons/home-act.svg");
 	background-size: 50px 50px;
+	box-shadow: 1px 10px 20px rgba(88, 92, 229, 0.25);
 }
 .sidebar__button-upcoming{
 	background-image: url("../assets/icons/calendar-inact.svg");

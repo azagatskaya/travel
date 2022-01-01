@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Travels</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> -->
 </head>
 <body>
 	<div class="container">
@@ -19,7 +19,12 @@
 
 		<header class="header">
 			<h1 class="header__h1">Shikra</h1>
-			<input type="text" placeholder="Search">
+			<form class="header__search-wrapper">
+				<div class="header__input-container">
+					<input class="header__input" type="search" name="search" id="search" placeholder="Search"/>
+				</div>
+				<button class="header__filter-button"></button>
+			</form>
 		</header>
 
 		<sidebar class="sidebar">
