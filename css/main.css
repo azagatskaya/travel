@@ -1,0 +1,237 @@
+.main {
+	grid-area: main-start/main-start/full-end/main-end;
+	display: grid;
+
+	grid-template-rows: 
+	[main-start sub-header1-start] 0.28fr 
+	[cards-start sub-header1-end] 261px 
+	[sub-header2-start cards-end] 0.28fr
+	[sub-header2-end graph-users-start] 1fr 
+	[graph-users-end main-end];
+
+	grid-template-columns: 
+	[main-start users-start] 1fr 
+	[users-end graph-start] 1.4fr 
+	[graph-end main-end];
+
+	background-color: rgba(240, 240, 240, 0.7);
+}
+
+/* ----------- h2 & ::before ------------- */
+.main__h2 {
+	font-size: 20px;
+	line-height: 23.44px;
+	color: rgba(62, 60, 80, 0.8);
+}
+.main__h2-explore,
+.main__h2-friends,
+.main__h2-members{
+	position: relative;
+	margin: auto 0;
+	padding-left: 30px;
+}
+.main__h2-explore{
+	grid-area: sub-header1-start/main-start/sub-header1-end/users-end;
+	margin-left: 25px;
+}
+.main__h2-explore::before,
+.main__h2-friends::before,
+.main__h2-members::before{
+	content: '';
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.main__h2-explore::before{
+	background-image: url("../assets/icons/compass.svg");
+}
+.main__h2-friends::before{
+	background-image: url("../assets/icons/users.svg");
+}
+.main__h2-members::before{
+	background-image: url("../assets/icons/members.svg");
+}
+.main__friends-header{
+	grid-area: sub-header2-start/users-start/sub-header2-end/users-end;
+}
+.main__graph-header{
+	grid-area: sub-header2-start/graph-start/sub-header2-end/graph-end;
+}
+.main__sub-header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 25px;
+}
+/* --------- Main Buttons ------------ */
+.main__btns-move-cards{
+	grid-area: sub-header1-start/graph-start/sub-header1-end/main-end;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 10px;
+}
+.main__btn-move-left,
+.main__btn-move-right{
+	width: 24px;
+	height: 24px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: 24px 24px;
+}
+.main__btn-move-left {
+	background-image: url("../assets/icons/chevron_backward.svg");
+}
+.main__btn-move-right {
+	background-image: url("../assets/icons/chevron_forward.svg");
+}
+.main__btn-friend-action,
+.main__btn-graph-action {
+	width: 36px;
+	height: 36px;
+	background-repeat: no-repeat;
+	background-size: 36px 36px;
+}
+.main__btn-friend-action,
+.main__btn-graph-action {
+	background-image: url('../assets/icons/more.svg');
+}
+
+.main__cards-section {
+	grid-area: cards-start/main-start/cards-end/main-end;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+.main__place-thumbnails-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 40px;
+	height: 100%;
+}
+.main__place-thumbnail {
+	transform:rotate(-90deg);
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 14px;
+	color: rgba(53, 54, 70, 0.4);
+}
+.main__thumb-act-icon{
+	width: 15px;
+	height: 72px;
+}
+.main__thumbnail-active{
+	color: #ff6647;
+	position: relative;
+}
+.main__card-container{
+	height: 100%;
+	width: calc(100% - 400px);
+	display: grid;
+	grid-template-columns: repeat(5, 293px);
+	grid-gap: 2%;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 15px;
+}
+.main__sight-card {
+	height: 100%;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+	padding: 10px 10px 20px 10px;
+	box-shadow: 1px 10px 20px rgba(88, 92, 229, 0.25);
+}
+.main__sight-photo{
+	width: 268px;
+	height: 170px;
+	border-radius: 20px;
+}
+.main__sight-caption{
+	font-size: 16px;
+	color: rgba(53, 54, 70, 1);
+}
+.main__sight-caption,
+.main__sight-country{
+	align-self: flex-start;
+	margin-left: 7px;
+}
+.main__sight-country{
+	/* position: relative; */
+	padding-left: 15px;
+	font-family: "Conv_Gilroy-Regular", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 14px;
+	color: rgba(53, 54, 70, 0.4);
+}
+.main__map-point{
+	width: 11px; 
+	height: 14px;
+	background-image: url('../assets/icons/map-point.svg');
+	background-size: 14px 11px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* .main__sight-country::before{
+	content: '';
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+
+} */
+.main__friends-section,
+.main__graph-section{
+	padding: 0 25px 25px 25px;
+}
+.main__friends-section{
+	grid-area: graph-users-start/users-start/graph-users-end/users-end;
+	border: 5px solid rgb(248, 103, 188);
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2%;
+}
+.main__friend-card{
+	width: 100px;
+	height: 125px;
+	border-radius: 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+.main__friend-pic,
+.main__friend-card>figcaption{
+	margin-bottom: 5px;
+}
+.main__friend-1{
+	background-color: #ECFAFF;
+}
+.main__friend-2{
+	background-color: #FFEFBC;
+}
+.main__graph-section {
+	border: 5px solid rgb(238, 152, 54);
+	grid-area: graph-users-start/graph-start/graph-users-end/graph-end;
+}
+.main__friend-pic{
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	box-shadow: 1px 2px 10px #A0E6FF77;
+}
+.main__friend-btn{
+
+}

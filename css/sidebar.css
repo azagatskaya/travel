@@ -1,6 +1,6 @@
 .sidebar {
-	background-color: #F6F7FB;
 	grid-area: main-start/full-start/full-end/menu-end;	
+	background-color: #eff3ff;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;

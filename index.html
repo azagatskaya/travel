@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Travels</title>
 	<link rel="stylesheet" href="css/style.css">
-	<!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> -->
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 </head>
 <body>
 	<div class="container">
@@ -55,7 +55,87 @@
 			</div>
 		</sidebar>
 
-		<main class="main"></main>
+		<main class="main">
+
+			<h2 class="main__h2 main__h2-explore">Explore</h2>
+			<div class="main__btns-move-cards">
+				<button class="main__btn-move-left"></button>
+				<button class="main__btn-move-right"></button>
+			</div>
+			
+			<!-- -------------------- Cards --------------------- -->
+			<section class="main__cards-section">
+				<img class="main__thumb-act-icon" src="../assets/icons/thumb-act-1.svg" alt="thumb-act">
+				<div class="main__place-thumbnails-container">
+					<a class="main__place-thumbnail" href="#">America</a>
+					<a class="main__place-thumbnail main__thumbnail-active"  href="#">Sights</a>
+					<a class="main__place-thumbnail" href="#">Europe</a>
+				</div>
+				<div class="main__card-container">
+					<figure class="main__sight-card">
+						<img class="main__sight-photo" src='./assets/img/island-1.png' alt="phiphi">
+						<figcaption class="main__sight-caption">Phi Phi Islands</figcaption>
+						<img class="main__map-point" src="" alt="">
+						<p class="main__sight-country">Thailand</p>
+					</figure>
+					<figure class="main__sight-card">
+						<img class="main__sight-photo" src='./assets/img/island-2.png' alt="phiphi">
+						<figcaption class="main__sight-caption">Kudahuvadhoo Island</figcaption>
+						<p class="main__sight-country">Maldives</p>
+					</figure>
+					<figure class="main__sight-card">
+						<img class="main__sight-photo" src='./assets/img/island-3.png' alt="phiphi">
+						<figcaption class="main__sight-caption">Santorini</figcaption>
+						<p class="main__sight-country">Greece</p>
+					</figure>
+					<figure class="main__sight-card">
+						<img class="main__sight-photo" src='./assets/img/island-4.png' alt="phiphi">
+						<figcaption class="main__sight-caption">Phi Phi Islands</figcaption>
+						<p class="main__sight-country">Thailand</p>
+					</figure>
+					<figure class="main__sight-card">
+						<img class="main__sight-photo" src='./assets/img/island-5.png' alt="phiphi">
+						<figcaption class="main__sight-caption">Phi Phi Islands</figcaption>
+						<p class="main__sight-country">Thailand</p>
+					</figure>
+				</div>
+			</section>
+
+			<!-- ----------------- Invite Friends ----------------- -->
+			<div class="main__sub-header main__friends-header">
+				<h2 class="main__h2 main__h2-friends">Invite Friends</h2>
+				<button class="main__btn-friend-action"></button>
+			</div>
+			<section class="main__friends-section">
+				<figure class="main__friend-card main__friend-1">
+					<img class="main__friend-pic" src='./assets/icons/friend-1.svg' alt="friend">
+					<figcaption>Nate</figcaption>
+					<button class="main__friend-btn"></button>
+				</figure>
+				<figure class="main__friend-card main__friend-2">
+					<img class="main__friend-pic" src='./assets/icons/friend-2.svg' alt="friend">
+					<figcaption>Jim</figcaption>
+					<button class="main__friend-btn"></button>
+				</figure>
+				<figure class="main__friend-card main__friend-3"></figure>
+				<figure class="main__friend-card main__friend-4"></figure>
+				<figure class="main__friend-card main__friend-5"></figure>
+				<figure class="main__friend-card main__friend-6"></figure>
+			</section>
+
+			<!-- --------------- Graph ------------------- -->
+			<div class="main__sub-header main__graph-header">
+				<h2 class="main__h2 main__h2-members">Members</h2>
+				<button class="main__btn-graph-action"></button>
+			</div>
+			<section class="main__graph-section">
+				<div class="main__graph-details">lorem</div>
+				<div class="main__graph-details">lorem</div>
+				<div class="main__graph-details">lorem</div>
+			</section>
+		</main>
+
+		<aside class="aside"></aside>
 	</div>
 </body>
 </html>

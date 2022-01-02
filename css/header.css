@@ -13,8 +13,8 @@
   opacity: 1;
 }
 .header {
-	background-color: #F6F7FB;
-	grid-area: full-start/main-start/menu-end/full-end;
+	background-color: #eff3ff;
+	grid-area: full-start/main-start/menu-end/main-end;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
