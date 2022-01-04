@@ -130,9 +130,9 @@
 	color: #ff6647;
 	position: relative;
 }
-.main__card-container{
+.main__cards-container{
 	height: 100%;
-	width: calc(100% - 400px);
+	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(5, 293px);
 	grid-gap: 2%;
