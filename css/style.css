@@ -3,17 +3,18 @@
 @import "sidebar.css";
 @import "header.css";
 @import "main.css";
-@import "aside.css";
+/* @import "aside.css"; */
 
 body{
 	min-height: 100vh;
-	font-family: 'Conv_Gilroy-Medium', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-family: 'Conv_Gilroy-Medium', 'Open Sans', sans-serif;
 }
 .container {
 	height: 100vh;
 	display: grid;
 	grid-template-rows: [full-start menu-start] minmax(113px, 15vh) [menu-end main-start] 1fr [main-end full-end];
-	grid-template-columns: [full-start menu-start] minmax(113px, 15vh) [menu-end main-start] 1fr [main-end aside-start] minmax(250px, 40vh) [aside-end full-end];
+	grid-template-columns: [full-start menu-start] minmax(113px, 15vh) [menu-end main-start] 1fr [main-end full-end];
+	/* grid-template-columns: [full-start menu-start] minmax(113px, 15vh) [menu-end main-start] 1fr [main-end aside-start] minmax(250px, 40vh) [aside-end full-end];  --------- c aside ----------*/
 }
 .menu {
 	background-color: #393D46;

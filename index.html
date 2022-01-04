@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
 	<title>Travels</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
@@ -75,28 +75,42 @@
 					<figure class="main__sight-card">
 						<img class="main__sight-photo" src='./assets/img/island-1.png' alt="phiphi">
 						<figcaption class="main__sight-caption">Phi Phi Islands</figcaption>
-						<img class="main__map-point" src="" alt="">
-						<p class="main__sight-country">Thailand</p>
+						<div class="main__country-price-wrapper">
+							<p class="main__sight-country">Thailand</p>
+							<p class="main__sight-price">$1.480</p>
+						</div>
 					</figure>
 					<figure class="main__sight-card">
-						<img class="main__sight-photo" src='./assets/img/island-2.png' alt="phiphi">
+						<img class="main__sight-photo" src='./assets/img/island-2.png' alt="kudahuvadhoo">
 						<figcaption class="main__sight-caption">Kudahuvadhoo Island</figcaption>
-						<p class="main__sight-country">Maldives</p>
+						<div class="main__country-price-wrapper">
+							<p class="main__sight-country">Maldives</p>
+							<p class="main__sight-price">$1.480</p>
+						</div>
 					</figure>
 					<figure class="main__sight-card">
-						<img class="main__sight-photo" src='./assets/img/island-3.png' alt="phiphi">
+						<img class="main__sight-photo" src='./assets/img/island-3.png' alt="santorini">
 						<figcaption class="main__sight-caption">Santorini</figcaption>
-						<p class="main__sight-country">Greece</p>
+						<div class="main__country-price-wrapper">
+							<p class="main__sight-country">Greece</p>
+							<p class="main__sight-price">$1.480</p>
+						</div>
 					</figure>
 					<figure class="main__sight-card">
-						<img class="main__sight-photo" src='./assets/img/island-4.png' alt="phiphi">
-						<figcaption class="main__sight-caption">Phi Phi Islands</figcaption>
-						<p class="main__sight-country">Thailand</p>
+						<img class="main__sight-photo" src='./assets/img/island-4.png' alt="kandima">
+						<figcaption class="main__sight-caption">Kudahuvadhoo Island</figcaption>
+						<div class="main__country-price-wrapper">
+							<p class="main__sight-country">Maldives</p>
+							<p class="main__sight-price">$1.480</p>
+						</div>
 					</figure>
 					<figure class="main__sight-card">
-						<img class="main__sight-photo" src='./assets/img/island-5.png' alt="phiphi">
-						<figcaption class="main__sight-caption">Phi Phi Islands</figcaption>
-						<p class="main__sight-country">Thailand</p>
+						<img class="main__sight-photo" src='./assets/img/island-5.png' alt="chicago">
+						<figcaption class="main__sight-caption">Chicago</figcaption>
+						<div class="main__country-price-wrapper">
+							<p class="main__sight-country">USA</p>
+							<p class="main__sight-price">$1.480</p>
+						</div>
 					</figure>
 				</div>
 			</section>
@@ -104,23 +118,34 @@
 			<!-- ----------------- Invite Friends ----------------- -->
 			<div class="main__sub-header main__friends-header">
 				<h2 class="main__h2 main__h2-friends">Invite Friends</h2>
-				<button class="main__btn-friend-action"></button>
+				<button class="main__btn-friends-action"></button>
 			</div>
+
 			<section class="main__friends-section">
 				<figure class="main__friend-card main__friend-1">
 					<img class="main__friend-pic" src='./assets/icons/friend-1.svg' alt="friend">
 					<figcaption>Nate</figcaption>
-					<button class="main__friend-btn"></button>
 				</figure>
 				<figure class="main__friend-card main__friend-2">
 					<img class="main__friend-pic" src='./assets/icons/friend-2.svg' alt="friend">
 					<figcaption>Jim</figcaption>
-					<button class="main__friend-btn"></button>
 				</figure>
-				<figure class="main__friend-card main__friend-3"></figure>
-				<figure class="main__friend-card main__friend-4"></figure>
-				<figure class="main__friend-card main__friend-5"></figure>
-				<figure class="main__friend-card main__friend-6"></figure>
+				<figure class="main__friend-card main__friend-3">
+					<img class="main__friend-pic" src='./assets/icons/friend-3.svg' alt="friend">
+					<figcaption>Angela</figcaption>
+				</figure>
+				<figure class="main__friend-card main__friend-4">
+					<img class="main__friend-pic" src='./assets/icons/friend-4.svg' alt="friend">
+					<figcaption>Bhaaji</figcaption>
+				</figure>
+				<figure class="main__friend-card main__friend-5">
+					<img class="main__friend-pic" src='./assets/icons/friend-5.svg' alt="friend">
+					<figcaption>Billo</figcaption>
+				</figure>
+				<figure class="main__friend-card main__friend-6">
+					<img class="main__friend-pic" src='./assets/icons/friend-6.svg' alt="friend">
+					<figcaption>Alex</figcaption>
+				</figure>
 			</section>
 
 			<!-- --------------- Graph ------------------- -->
@@ -128,10 +153,72 @@
 				<h2 class="main__h2 main__h2-members">Members</h2>
 				<button class="main__btn-graph-action"></button>
 			</div>
+
 			<section class="main__graph-section">
-				<div class="main__graph-details">lorem</div>
-				<div class="main__graph-details">lorem</div>
-				<div class="main__graph-details">lorem</div>
+				<div class="main__legend-container">
+					<p class="main__legend-item light-grey-text main__legend-item-1">Guests</p>
+					<p class="main__legend-item light-grey-text main__legend-item-2">Registered</p>
+				</div>
+
+				<div class="main__graph-numbers-container">
+					<p class="main__graph-number light-grey-text">10</p>
+					<p class="main__graph-number light-grey-text">20</p>
+					<p class="main__graph-number light-grey-text">30</p>
+					<p class="main__graph-number light-grey-text">40</p>
+				</div>
+
+				<div class="main__graph-data">
+					<div class="main__graph-column">
+						<div class="main__graph-scale-grey main__grey-1">
+							<div class="main__graph-scale-red main__red-1"></div>
+						</div>
+						<div class="main__graph-day light-grey-text">Mon</div>
+					</div>
+					<div class="main__graph-column">
+						<div class="main__graph-scale-grey main__grey-2">
+							<div class="main__graph-scale-red main__red-2"></div>
+						</div>
+						<div class="main__graph-day light-grey-text">Tue</div>
+					</div>
+					<div class="main__graph-column">
+						<div class="main__graph-scale-grey main__grey-3">
+							<div class="main__graph-scale-red main__red-3"></div>
+						</div>
+						<div class="main__graph-day light-grey-text">Wed</div>
+					</div>
+					<div class="main__graph-column">
+						<div class="main__graph-scale-grey main__grey-4">
+							<div class="main__graph-scale-red main__red-4"></div>
+						</div>
+						<div class="main__graph-day light-grey-text">Thu</div>
+					</div>
+					<div class="main__graph-column">
+						<div class="main__graph-scale-grey main__grey-5">
+							<div class="main__graph-scale-red main__red-5"></div>
+						</div>
+						<div class="main__graph-day light-grey-text">Fri</div>
+					</div>
+					<div class="main__graph-column">
+						<div class="main__graph-scale-grey main__grey-6">
+							<div class="main__graph-scale-red main__red-6"></div>
+						</div>
+						<div class="main__graph-day light-grey-text">Sat</div>
+					</div>
+					<div class="main__graph-column">
+						<div class="main__graph-scale-grey main__grey-7">
+							<div class="main__graph-scale-red main__red-7"></div>
+						</div>
+						<div class="main__graph-day light-grey-text">Sun</div>
+					</div>
+					<div class="main__graph-column">
+						<div class="main__graph-scale-grey main__grey-3">
+							<div class="main__graph-scale-red main__red-3"></div>
+						</div>
+						<div class="main__graph-day light-grey-text">Wed</div>
+					</div>
+					
+				</div>
+				
 			</section>
 		</main>
 
